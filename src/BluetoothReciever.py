@@ -48,6 +48,6 @@ if __name__ == '__main__':
 
         print("")
         
-        SDL_Delay(500)
+        SDL_Delay(50)
 
     SDL_Quit()

@@ -15,3 +15,5 @@ sock.send("1")
 time.sleep(5)
 sock.send("0")
 sock.close()
+
+# 32768
