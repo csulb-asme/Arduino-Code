@@ -5,12 +5,16 @@
 * Download the App : https://github.com/Mayoogh/Arduino-Bluetooth-Basic
 * This program lets you to control a LED on pin 13 of arduino using a bluetooth module
 */
+#include <SoftwareSerial.h>
 String data; //Variable for storing received data
 int movementVertical;
 int movementHorizontal;
 int movementRotation;
 int lever;
 int door;
+char c;
+
+// SoftwareSerial BTSerial(0, 1);
 
 void setup()
 {
@@ -24,16 +28,33 @@ void setup()
 
 void loop()
 {
+    Serial.println("Looped");
     if (Serial.available() >= 24) // Send data only when you receive data:
     {
-        data = Serial.readString(); //Read the incoming data & store into data
-        Serial.println(data);   //Print Value inside data in Serial monitor
+        movementVertical = Serial.parseInt();
+        Serial.println(movementVertical);
+
+        movementHorizontal = Serial.parseInt();
+        Serial.println(movementHorizontal);
+
+        movementRotation = Serial.parseInt();
+        Serial.println(movementRotation);
+
+        lever = Serial.parseInt();
+        Serial.println(lever);
+
+        door = Serial.parseInt();
+        Serial.println(door);
+
+        Serial.println("Got Something");
+        // data = Serial.readString(); //Read the incoming data & store into data
+        // Serial.println(data);   //Print Value inside data in Serial monitor
         // if (data == '1')
         // {                           // Checks whether value of data is equal to 1
         //     // digitalWrite(13, HIGH); //If value is 1 then LED turns ON
         //     analogWrite(12, 50);
         //     analogWrite(11, 50);
-        //     analogWrite(10, 50);
+        //     analogWrite(10, 50);x`
         //     analogWrite(6, 50);
         //     analogWrite(5, 50);
         // }
