@@ -48,7 +48,7 @@ if __name__ == '__main__':
         bd_sock.send(data)
 
         data = ""
-        SDL_Delay(50)
+        SDL_Delay(1500)
     
     SDL_Quit()
     bd_sock.close()
