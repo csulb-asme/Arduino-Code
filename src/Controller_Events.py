@@ -63,78 +63,84 @@ if __name__ == "__main__":
 
             RIGHT BUMPER - 10
             LEFT BUMPER  - 9
+
+            8 - right analog
+            7 - left analog
             '''
             if event.type == SDL_JOYBUTTONDOWN:
                 if event.jbutton.button == 0:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 1:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 2:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 3:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 9:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 10:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 11:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 12:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 13:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 14:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 8:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 7:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
             elif event.type == SDL_JOYBUTTONUP:
                 if event.jbutton.button == 0:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 1:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 2:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 3:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 9:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 10:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 11:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 12:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 13:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                elif event.jbutton.button == 14:
+                    print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 8:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
                 elif event.jbutton.button == 7:
                     print("Button: {} - State: {}".format(event.jbutton.button, SDL_JoystickGetButton(joy, event.jbutton.button)))
-                    BD_SOCK.send(str(event.jbutton.button) + " {0:06d}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
+                    BD_SOCK.send(str(event.jbutton.button) + " {}".format(SDL_JoystickGetButton(joy, event.jbutton.button)))
 
 
             '''

@@ -62,7 +62,7 @@ void loop()
                 analogWrite(MOTOR_FL, BACKWARD);
                 analogWrite(MOTOR_BL, BACKWARD);
                 analogWrite(MOTOR_FR, FORWARD);
-                analogWrite(13, FORWARD);
+                analogWrite(MOTOR_BR, FORWARD);
             } else if (secondSet == 0) {
                 analogWrite(MOTOR_FL, STOP);
                 analogWrite(MOTOR_BL, STOP);
